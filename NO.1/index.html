@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日惊喜游戏</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 添加气球装饰 -->
+    <div class="balloon" style="top: 10%;">🎈</div>
+    <div class="balloon" style="top: 20%;">🎈</div>
+    <div class="balloon" style="top: 15%;">🎈</div>
+    <div class="balloon" style="top: 25%;">🎈</div>
+
+    <div class="container">
+        <header>
+            <h1>🎉 欢迎来到生日惊喜游戏！ 🎉</h1>
+            <p>完成所有游戏，获得特别的惊喜！</p>
+        </header>
+
+        <main>
+            <div class="game-grid">
+                <div class="game-card" data-game="1">
+                    <h2>游戏 1</h2>
+                    <p>快速点击</p>
+                    <p class="game-desc">在限定时间内点击出现的所有目标</p>
+                    <button onclick="startGame(1)">开始游戏</button>
+                </div>
+                <div class="game-card" data-game="2">
+                    <h2>游戏 2</h2>
+                    <p>记忆配对</p>
+                    <button onclick="startGame(2)">开始游戏</button>
+                </div>
+                <div class="game-card" data-game="3">
+                    <h2>游戏 3</h2>
+                    <p>反应速度</p>
+                    <button onclick="startGame(3)">开始游戏</button>
+                </div>
+                <div class="game-card" data-game="4">
+                    <h2>游戏 4</h2>
+                    <p>解密谜题</p>
+                    <button onclick="startGame(4)">开始游戏</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- 添加装饰元素 -->
+        <div class="decoration cake-icon">🎂</div>
+    </div>
+
+    <!-- 添加重置按钮 -->
+    <button class="reset-progress" onclick="gameState.resetProgress()">重置进度</button>
+    
+    <script src="js/main.js"></script>
+</body>
+</html> 
